@@ -21,8 +21,8 @@ Vagrant.configure("2") do |config|
       box.vm.provider "virtualbox" do |v|
         v.memory = boxconfig[:memory]
         v.cpus = boxconfig[:cpus]
-      box.vm.provision "shell", path: "config.sh"
       end
+      box.vm.provision "shell", path: "config.sh"
     end
   end
 end
